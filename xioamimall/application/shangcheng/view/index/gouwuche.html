@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="author" content="order by dede58.com"/>
+		<title>我的购物车-小米商城</title>
+		<link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+		<style>
+		 *{font-style: normal}
+		    .gw{margin: 8px;}
+		    .gw::after{display: block;clear: both;content: '';margin: 10px;}
+		    .gw_num{border: 1px solid #dbdbdb;width: 110px;line-height: 26px;overflow: hidden;float: left;}
+		    .gw_num em{display: block;height: 26px;width: 26px;float: left;color: #7A7979;border-right: 1px solid #dbdbdb;text-align: center;cursor: pointer;font-style: normal}
+		    .gw_num .num{display: block;float: left;text-align: center;width: 52px;font-style: normal;font-size: 14px;line-height: 24px;border: 0;}
+		    .gw_num em.add{float: right;border-right: 0;border-left: 1px solid #dbdbdb;}
+		    p{margin: 4px;padding: 0}
+		    .choose,.qx{float: left;width: 20px;height: 20px;border: 1px solid #ccc; border-radius: 100%;margin-right: 10px;}
+		    .choose-on, .qx-on{background: url(./on.png) no-repeat center center;background-size: 100%;}
+		    
+		</style>
+	</head>
+	<body>
+	<!-- start header -->
+	<!--end header -->
+
+<!-- start banner_x -->
+		<div class="banner_x center">
+			<a href="./index.html" target="_blank"><div class="logo fl"></div></a>
+			
+			<div class="wdgwc fl ml40">我的购物车</div>
+			<div class="wxts fl ml20">温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</div>
+			<div class="dlzc fr">
+				<ul>
+					<li><a href="/shangcheng/login/loginOut" target="_blank">{$res}</a></li>
+					<li>|</li>
+					<li><a href="/shangcheng/Registered/registered" target="_blank">注册</a></li>	
+				</ul>
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="xiantiao"></div>
+		<div class="gwcxqbj">
+			<div class="gwcxd center">
+				<div class="top2 center">
+					<div class="sub_top fl">
+						<input type="checkbox" id="sellectAll" class="quanxuan" />全选
+						  <label for="all" class="shop"></label>
+					</div>
+					<div class="sub_top fl">商品名称</div>
+					<div class="sub_top fl">单价</div>
+					<div class="sub_top fl">数量</div>
+					<div class="sub_top fl">小计</div>
+					<div class="sub_top fr">操作</div>
+					<div class="clear"></div>
+				</div>
+				<div class="content2 center" >
+					<div class="sub_content fl ">
+						<input type="checkbox" value="quanxuan" name="sub" class="quanxuan"  id="sel1" class="sel sel1"/>
+					</div>
+					<div class="sub_content fl"><img src="__IMAGE__/gwc_xiaomi6.jpg"/></div>
+					<div class="sub_content fl ft20">小米6全网通6GB内存+64GB 亮黑色</div>
+					<div class="sub_content fl"><span class="danjia" id="danjia">2499</span></div>
+					<div class="sub_content fl">
+							<span class="dianji"><input  id="shulian" class="shuliang" type="number" value="1" step="1" min="1" ></span>
+					</div>
+					<div class="sub_content fl"><span  class="goods_price" id="jieshuan">2499元</span></div>
+					<div class="sub_content fl"><a href="">×</a></div>
+					<div class="clear"></div>
+					
+				</div>
+				<div class="content2 center">
+					<div class="sub_content fl ">
+						<input type="checkbox" class="quanxuan" name="sub" value="quanxuan"  id="sel2" class="sel sel2" />
+					</div>
+					<div class="sub_content fl"><img src="__IMAGE__/gwc_xiaomi6.jpg"></div>
+					<div class="sub_content fl ft20">小米6全网通6GB内存+64GB 亮黑色</div>
+					<div class="sub_content fl " id="danjia">2499</div>
+					<div class="sub_content fl">
+						<input class="shuliang"  type="number" value="1" step="1" min="1" >
+					</div>
+				<div class="sub_content fl"><span class="goods_price" >2499元</span></div>
+					<div class="sub_content fl"><a href="">×</a></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="jiesuandan mt20 center">
+				<div class="tishi fl ml20">
+					<ul>
+						<li><a href="./liebiao.html">继续购物</a></li>
+						<li>|</li>
+						<li>共<span>2</span>件商品，已选择<span class="totalNum">0</span>件</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="jiesuan fr">
+					<div class="jiesuanjiage fl">合计（不含运费）：<span class="total">0元</span></div>
+					<div class="jsanniu fr"><input class="jsan" type="submit" name="jiesuan"  value="去结算"/></div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+		</div>
+
+	<!-- footer -->
+	<footer class="center">
+			
+			<div class="mt20">小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region</div>
+			<div>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号</div> 
+			<div>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</div>
+		</footer>
+	
+	<script src="__JS__/jquery.min.js?v=2.1.4"></script>
+
+	<script>
+
+		//全选
+		$(function() {
+			$('#sellectAll').on('click',function(){
+				if(this.checked) {
+
+					$("input[name='sub']").prop('checked',true);//是否选中
+					suml = $("input[name='sub']:checked").length//获取选择数量
+					$('.totalNum').html(suml);		//显示选择几件
+					jieshuan1 =  $('#jieshuan').html(); //获取小计
+					$('.total').html(jieshuan1);		//显示总计
+					$('.totalNum').html(ds)//显示选择几件商品
+
+				}else {
+
+					$("input[name='sub']").prop('checked',false);
+					suml = $("input[name='sub']:checked").length;
+					$('.totalNum').html(suml);		//显示选择几件
+					$('.total').html(0+"元");		//显示总计
+				}
+			});
+		});
+
+		//点击是否全选单选
+		$("input[name='sub']").on('click',function() {
+			var $subs = $("input[name='sub']");//获取单选
+			jieshuan1 =  $('#jieshuan').html(); //获取小计
+			$('.total').html(jieshuan1);		//显示总计
+
+			var total_count = $("input[name='sub']:checked").length;
+			$('.totalNum').html(total_count);		//显示选择几件
+			$("#sellectAll").prop("checked",$subs.length == $subs.filter(":checked").length ? true :false);
+
+
+
+		});
+
+
+		//计算单价显示小计
+		$('document').ready(function(){
+			$('#shulian').click(function(){
+
+				shulian = $('#shulian').val(); //获取数量
+				danji = $('#danjia').html()//获取单价
+
+				jieshuan2 =  $('#jieshuan').html(); //获取小计
+
+				$('#jieshuan').html(danji*shulian+'元');
+				$('#jieshuan2').html(); //显示小计
+
+			});
+
+		})
+
+		//总价
+
+
+
+
+
+
+			
+			
+
+	</script>
+	
+	</body>
+</html>
